@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Layout 1</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      #basic-layout-1{
+        grid-template-areas:
+        "1 1 1 1"
+        "3 3 3 3"
+        "4 4 4 4" 
+        ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
+      }
+      header{
+        grid-area: 1;
+      }
+      nav{
+        grid-area: 2;
+      }
+      main{
+        grid-area: 3;
+      }
+      footer{
+        grid-area: 4;
+      }
+    </style>
+  </head>
+  <body id="basic-layout-1">
+    <header><h1>Basic Layout 1</h1></header>
+    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
+    <main>main</main>
+    <footer>footer</footer>
+  </body>
+</html>
